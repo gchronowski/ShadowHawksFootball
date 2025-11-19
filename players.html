@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowHawks Roster</title>
 
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #111;
+            padding: 15px 30px;
+        }
+
+        .navbar img {
+            height: 55px;
+        }
+
+        .navbar a {
+            color: white;
+            margin-left: 25px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .navbar a:hover {
+            color: #ffd100;
+        }
+
+        .content {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            border-left: 8px solid #ffd100;
+            padding-left: 12px;
+            font-size: 30px;
+        }
+
+        .roster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .player-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 5px solid #ffd100;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+        }
+
+        .player-card h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .footer {
+            background: #111;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <img src="logo.png">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="players.html">Our Players</a>
+            <a href="standing.html">Current Division Standing</a>
+            <a href="help.html">Help</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <h2>Starters</h2>
+
+        <div class="roster-grid">
+
+            <!-- STARTERS -->
+
+            <div class="player-card">
+                <h3>QB — Lamar Jackson</h3>
+                <p>100% Rostered | 85% Start</p>
+                <p>Sun 1:00 PM vs NYJ (22nd)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>RB — Derrick Henry</h3>
+                <p>99% Rostered | 93% Start</p>
+                <p>Sun 1:00 PM vs NYJ (19th)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>RB — David Montgomery</h3>
+                <p>93% Rostered | 58% Start</p>
+                <p>Sun 1:00 PM vs NYG (30th)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>WR — AJ Brown</h3>
+                <p>99% Rostered | 84% Start</p>
+                <p>Sun 4:25 PM @ DAL (30th)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>WR — Amon-Ra St. Brown</h3>
+                <p>100% Rostered | 98% Start</p>
+                <p>Sun 1:00 PM vs NYG (27th)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>TE — George Kittle</h3>
+                <p>99% Rostered | 91% Start</p>
+                <p>Mon 8:15 PM vs CAR (21st)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>FLEX — Kyren Williams</h3>
+                <p>99% Rostered | 90% Start</p>
+                <p>Sun 8:20 PM vs TB (27th)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>D/ST — Seahawks Defense</h3>
+                <p>90% Rostered | 76% Start</p>
+                <p>Sun 1:00 PM @ TEN (32nd)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>K — Chris Boswell</h3>
+                <p>93% Rostered | 88% Start</p>
+                <p>Sun 1:00 PM @ CHI (10th)</p>
+            </div>
+
+        </div>
+
+        <h2 style="margin-top:50px;">Bench</h2>
+
+        <div class="roster-grid">
+
+            <!-- BENCH -->
+
+            <div class="player-card">
+                <h3>RB — James Cook III</h3>
+                <p>100% Rostered | 96% Start</p>
+                <p>Projection: 15.77</p>
+            </div>
+
+            <div class="player-card">
+                <h3>TE — Jake Ferguson</h3>
+                <p>98% Rostered | 59% Start</p>
+                <p>Sun 4:25 PM vs PHI (2nd)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>WR — Justin Jefferson</h3>
+                <p>100% Rostered | 97% Start</p>
+                <p>Sun 1:00 PM @ GB (11th)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>QB — Daniel Jones</h3>
+                <p>89% Rostered | 33% Start</p>
+                <p>Sun 1:00 PM @ KC (10th)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>WR — Rome Odunze</h3>
+                <p>94% Rostered | 63% Start</p>
+                <p>Sun 1:00 PM vs PIT (32nd)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>WR — Chris Olave</h3>
+                <p>94% Rostered | 43% Start</p>
+                <p>Sun 4:25 PM vs ATL (17th)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>RB — Kenneth Walker III</h3>
+                <p>93% Rostered | 60% Start</p>
+                <p>Sun 1:00 PM @ TEN (25th)</p>
+            </div>
+
+            <div class="player-card">
+                <h3>IR — Garrett Wilson</h3>
+                <p>89% Rostered | 16% Start</p>
+                <p>Sun 1:00 PM @ BAL</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        ShadowHawks Football © 2025 — All Rights Reserved
+    </div>
+
+</body>
+</html>
