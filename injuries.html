@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowHawks Injury Report</title>
 
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #111;
+            padding: 15px 30px;
+        }
+
+        .navbar img {
+            height: 55px;
+        }
+
+        .navbar a {
+            color: white;
+            margin-left: 25px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .navbar a:hover {
+            color: #ffd100;
+        }
+
+        .content {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            border-left: 8px solid #ffd100;
+            padding-left: 12px;
+            font-size: 30px;
+            margin-top: 50px;
+        }
+
+        .injury-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 5px solid #ffd100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }
+
+        .injury-card h3 {
+            margin: 0 0 10px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <img src="logo.png">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="players.html">Our Players</a>
+            <a href="standing.html">Current Division Standing</a>
+            <a href="injuries.html">Injury Report</a>
+            <a href="help.html">Help</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <h2>Injury Report</h2>
+        <p>Updated player statuses for the Poznan ShadowHawks. Check back frequently for changes.</p>
+
+        <!-- ===================================================== -->
+        <!-- ===============   OUT / IR PLAYERS   ================ -->
+        <!-- ===================================================== -->
+        <h2>Out / IR</h2>
+
+        <!-- UPDATE THIS SECTION WITH OUT/IR PLAYERS -->
+        <!-- Example format:
+        <div class="injury-card">
+            <h3>Player Name — Position</h3>
+            <p>Status: OUT (Ankle)</p>
+            <p>Expected Return: Week 12</p>
+        </div>
+        -->
+
+        <div class="injury-card">
+            <h3>Garrett Wilson — WR</h3>
+            <p>Status: IR (Undisclosed)</p>
+            <p>Expected Return: TBD</p>
+        </div>
+
+        <!-- END OUT/IR SECTION -->
+
+
+        <!-- ===================================================== -->
+        <!-- ===============   QUESTIONABLE   ==================== -->
+        <!-- ===================================================== -->
+        <h2>Questionable</h2>
+
+        <!-- UPDATE THIS SECTION WITH QUESTIONABLE PLAYERS -->
+        <!-- Example:
+        <div class="injury-card">
+            <h3>Player Name — Position</h3>
+            <p>Status: Questionable (Hamstring)</p>
+            <p>Game Status: Game-time decision</p>
+        </div>
+        -->
+
+        <!-- No players currently questionable -->
+        <div class="injury-card">
+            <h3>No current injuries listed</h3>
+            <p>All other active players are fully available.</p>
+        </div>
+
+        <!-- END QUESTIONABLE SECTION -->
+
+
+        <!-- ===================================================== -->
+        <!-- =================   PROBABLE   ====================== -->
+        <!-- ===================================================== -->
+        <h2>Probable</h2>
+
+        <!-- UPDATE THIS SECTION WITH PROBABLE PLAYERS -->
+        <!-- Example:
+        <div class="injury-card">
+            <h3>Player Name — Position</h3>
+            <p>Status: Probable (Shoulder)</p>
+            <p>Expected to play this week.</p>
+        </div>
+        -->
+
+        <!-- No probable players -->
+        <div class="injury-card">
+            <h3>No probable players at this time</h3>
+            <p>Roster appears clear.</p>
+        </div>
+
+        <!-- END PROBABLE SECTION -->
+
+    </div>
+
+    <div class="footer">
+        ShadowHawks Football © 2025 — All Rights Reserved
+    </div>
+
+</body>
+</html>
