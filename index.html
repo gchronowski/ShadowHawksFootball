@@ -10,6 +10,20 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background: #f5f5f5;
+            position: relative;
+        }
+
+        /* TRANSLUCENT BACKGROUND LOGO */
+        .background-logo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 900px; /* adjust size if needed */
+            opacity: 0.08; /* translucent */
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            user-select: none;
+            pointer-events: none;
         }
 
         /* NAVBAR */
@@ -37,7 +51,7 @@
         }
 
         .navbar a:hover {
-            color: #ffd100; /* Steelers gold style */
+            color: #ffd100;
         }
 
         /* HERO / LANDING */
@@ -56,11 +70,13 @@
         .hero h1 {
             font-size: 48px;
             margin: 0;
+            font-weight: 900;
         }
 
         .hero p {
             font-size: 22px;
             margin-top: 10px;
+            font-weight: 600;
         }
 
         /* MAIN CONTENT */
@@ -76,7 +92,7 @@
             font-size: 30px;
         }
 
-        /* NEWS BULLETIN */
+        /* NEWS ITEMS */
         .news-item {
             background: white;
             padding: 20px;
@@ -98,6 +114,9 @@
 
 <body>
 
+    <!-- BACKGROUND TRANSLUCENT LOGO -->
+    <img src="logo.png" class="background-logo" alt="ShadowHawks Background Logo">
+
     <!-- NAVIGATION BAR -->
     <div class="navbar">
         <img src="logo.png" alt="ShadowHawks Logo">
@@ -112,7 +131,7 @@
     <!-- HERO LANDING SECTION -->
     <div class="hero">
         <div>
-            <h1>Welcome to the Poznan ShadowHawks Homepage</h1>
+            <h1>Welcome to the Poznan ShadowHawks</h1>
             <p>Where grit, pride, and excellence define every game.</p>
         </div>
     </div>
@@ -122,7 +141,7 @@
         <h2>About the ShadowHawks</h2>
         <p>
             The ShadowHawks represent determination and heart.  
-            Follow the team for roster updates, playoff analysis, game previews, and community events.
+            Follow the team for roster updates, game previews, standings, and news coverage.
         </p>
     </div>
 
@@ -132,17 +151,17 @@
 
         <div class="news-item">
             <h3>ShadowHawks Fall in Nail-Biter vs. Bighorns</h3>
-            <p>The Hawks surged to a 76% win probability mid-game before momentum swung back to the Bighorns.</p>
+            <p>The Hawks surged to a 76% win probability before momentum shifted back to the Bighorns late in the game.</p>
         </div>
 
         <div class="news-item">
-            <h3>Training Camp Highlights</h3>
-            <p>Players showcase incredible bye-week training progress as the team prepares for its next big matchup.</p>
+            <h3>Training Camp Progress</h3>
+            <p>Players showcase impressive development heading into next week's matchup.</p>
         </div>
 
         <div class="news-item">
             <h3>Community Night Announced</h3>
-            <p>Join us for a meet-and-greet with players, coaches, and staff — date coming soon.</p>
+            <p>Join us for a fan meet-and-greet — details coming soon.</p>
         </div>
     </div>
 
