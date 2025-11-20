@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Standings</title>
+    <title>Division Standing</title>
+
     <style>
         body {
             margin: 0;
@@ -36,6 +37,7 @@
             color: #ffd100;
         }
 
+        /* MAIN CONTENT WRAPPER */
         .content {
             max-width: 1100px;
             margin: auto;
@@ -46,34 +48,38 @@
             border-left: 8px solid #ffd100;
             padding-left: 12px;
             font-size: 30px;
+            margin-bottom: 20px;
         }
 
-        .roster-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-            margin-top: 25px;
-        }
-
-        .player-card {
+        /* CARD STYLING */
+        .card {
             background: white;
+            padding: 25px 30px;
             border-radius: 8px;
-            padding: 20px;
-            border-left: 5px solid #ffd100;
-            box-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+            margin-bottom: 30px;
+            border-left: 6px solid #ffd100;
         }
 
-        .player-card h3 {
-            margin: 0 0 10px 0;
+        .card ul {
+            list-style: none;
+            padding-left: 0;
         }
 
-        .footer {
+        .card li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+        footer {
             background: #111;
             padding: 20px;
             color: white;
             text-align: center;
             margin-top: 50px;
         }
+
     </style>
 </head>
 <body>
@@ -86,48 +92,56 @@
             <a href="players.html">Our Players</a>
             <a href="injuries.html">Injury Report</a>
             <a href="standing.html">Current Division Standing</a>
+            <a href="news.html">News</a>
         </div>
     </div>
 
-<main>
+    <!-- MAIN PAGE CONTENT -->
+    <div class="content">
 
-    <!-- ============================
-         UPDATE STANDINGS HERE
-         ============================ -->
-    <section class="card">
-        <h2>Division Standings</h2>
-        <ul>
-            <li><strong>1. Jerknowitzski Shiners</strong> – 6-3</li>
-            <li><strong>2. Wilheimsburg Bighorns</strong> – 6-3</li>
-            <li><strong>3. Poznan Shadowhawks</strong> – 4-5</li> <!-- UPDATE THIS TEAM -->
-            <li><strong>4. Pinkerton Tyrants</strong> – 3-5</li>
-            <li><strong>5. Hanover Foxhounds</strong> – 3-6</li>
-            
-        </ul>
-    </section>
+        <!-- ============================
+             DIVISION STANDINGS
+             ============================ -->
+        <section class="card">
+            <h2>Division Standings</h2>
+            <ul>
+                <li><strong>1. Jerknowitzski Shiners</strong> – 6-3</li>
+                <li><strong>2. Wilheimsburg Bighorns</strong> – 6-3</li>
+                <li><strong>3. Poznan Shadowhawks</strong> – 4-5</li> <!-- UPDATE -->
+                <li><strong>4. Pinkerton Tyrants</strong> – 3-5</li>
+                <li><strong>5. Hanover Foxhounds</strong> – 3-6</li>
+            </ul>
+        </section>
 
-    <!-- ============================
-         UPDATE PLAYOFF ODDS HERE
-         ============================ -->
-    <section class="card">
-        <h2>Playoff Chances</h2>
-        <li><strong>Shadowhawks Playoff Probability:</strong> 72%</li> 
-        <!-- Just edit that number whenever you run the model -->
-    </section>
+        <!-- ============================
+             PLAYOFF ODDS
+             ============================ -->
+        <section class="card">
+            <h2>Playoff Chances</h2>
+            <ul>
+                <li><strong>Shadowhawks Playoff Probability:</strong> 72%</li>
+                <!-- Update % whenever needed -->
+            </ul>
+        </section>
 
-    <!-- ============================
-         UPDATE SCHEDULE HERE
-         ============================ -->
-    <section class="card">
-        <h2>Upcoming Schedule</h2>
-        <ul>
-            <li><strong>Week 12:</strong> BYE</li>
-            <li><strong>Week 13:</strong> Jerknowitzski Shiners</li>
-            <li><strong>Week 14:</strong> Playoffs Begin</li>
-        </ul>
-    </section>
+        <!-- ============================
+             UPCOMING SCHEDULE
+             ============================ -->
+        <section class="card">
+            <h2>Upcoming Schedule</h2>
+            <ul>
+                <li><strong>Week 12:</strong> BYE</li>
+                <li><strong>Week 13:</strong> Jerknowitzski Shiners</li>
+                <li><strong>Week 14:</strong> Playoffs Begin</li>
+            </ul>
+        </section>
 
-</main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        ShadowHawks Football © 2025 — All Rights Reserved
+    </footer>
 
 </body>
 </html>
