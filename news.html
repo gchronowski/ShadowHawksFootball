@@ -1,1 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ShadowHawks — News</title>
+<style>
+    :root {
+        --bg: #f5f5f5;
+        --accent: #ffd100;
+        --dark: #111;
+        --card-bg: #ffffff;
+        --max-width: 1100px;
+        --gap: 20px;
+    }
 
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: #111;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        background: var(--dark);
+        padding: 15px 30px;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+    .navbar img { height:46px; }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-left: 18px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .navbar a:hover { color: var(--accent); }
+
+    /* PAGE WRAPPER */
+    .wrap {
+        max-width: var(--max-width);
+        margin: 28px auto;
+        padding: 0 18px;
+    }
+
+    .hero {
+        display:flex;
+        align-items:center;
+        gap:20px;
+        margin-bottom: 22px;
+    }
+
+    .hero .title {
+        background: white;
+        padding: 18px 22px;
+        border-radius: 8px;
+        border-left: 6px solid var(--accent);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .hero h1 { margin:0; font-size:24px; }
+    .hero p { margin:6px 0 0 0; color:#444; font-size:14px; }
+
+    /* SCHEDULE IMAGE */
+    .schedule-preview {
+        margin-top: 12px;
+        border-radius:8px;
+        overflow:hidden;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .schedule-preview img { width:100%; height:auto; display:block; }
+
+    /* GRID for news + side */
+    .grid {
+        display:grid;
+        grid-template-columns: 1fr 320px;
+        gap: var(--gap);
+        margin-top:20px;
+    }
+
+    /* MAIN NEWS COLUMN */
+    .news-list { }
+
+    .news-card {
+        background: var(--card-bg);
+        padding: 18px;
+        margin-bottom: 16px;
+        border-radius:8px;
+        border-left: 6px solid var(--accent);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .news-card h3 { margin:0 0 6px 0; font-size:18px; }
+    .news-card .meta { color:#666; font-size:13px; margin-bottom:10px; }
+    .news-card p { margin:0; line-height:1.45; color:#222; }
+
+    /* SIDE COLUMN */
+    .side-column .card {
+        background: var(--card-bg);
+        padding: 16px;
+        border-radius:8px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .side-column h4 { margin:0 0 8px 0; font-size:16px; }
+
+    .mini-list { list-style:none; padding-left:0; margin:0; }
+    .mini-list li { margin-bottom:8px; font-size:14px; color:#222; }
+
+    /* FOOTER */
+    footer {
+        text-align:center;
+        padding:24px 12px;
+        background: var(--dark);
+        color:white;
+        margin-top:26px;
+    }
+
+    /* Responsive */
+    @media (max-width:980px) {
+        .grid { grid-template-columns: 1fr; }
+        .hero { flex-direction:column; align-items:flex-start; gap:12px; }
+    }
+</style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <div class="navbar">
+        <img src="logo.png" alt="ShadowHawks logo">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="players.html">Our Players</a>
+            <a href="injuries.html">Injury Report</a>
+            <a href="standing.html">Standings</a>
+            <a href="news.html">News</a>
+        </div>
+    </div>
+
+    <div class="wrap">
+
+        <!-- HERO -->
+        <div class="hero">
+            <div class="title">
+                <h1>Team News & Game Reports</h1>
+                <p>Short, professional recaps of each week's results and roster movement.</p>
+            </div>
+
+            <!-- schedule preview (uses the uploaded screenshot file path) -->
+            <div style="flex:1">
+                <div class="schedule-preview" aria-hidden="true">
+                    <img src="/mnt/data/62F1538A-CEC8-4668-AE61-8CD94A3DA3FC.jpeg" alt="Season schedule screenshot">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+
+            <!-- MAIN NEWS COLUMN -->
+            <div class="news-list">
+
+                <!-- WEEK 11 -->
+                <article class="news-card">
+                    <h3>Week 11 — Close Loss to Wilheimsburg Bighorns (114.42–114.84)</h3>
+                    <div class="meta">Week 11 — Final score</div>
+                    <p>
+                        The ShadowHawks battled to the final whistle but fell short by a narrow margin. The defense forced several key stops throughout the second half, but an inability to sustain late drives prevented the offense from closing the gap. Coaching praised the team's effort while noting several areas — third-down execution and red-zone efficiency — to clean up ahead of the bye week.
+                    </p>
+                </article>
+
+                <!-- WEEK 10 -->
+                <article class="news-card">
+                    <h3>Week 10 — Heavy Loss at Hanover Foxhounds (115.94–187.1)</h3>
+                    <div class="meta">Week 10 — Final score</div>
+                    <p>
+                        The ShadowHawks were outpaced in Week 10 as the Foxhounds posted a dominant offensive performance. Turnovers and missed opportunities on special teams contributed to a lopsided result. Coaches indicated that the team will emphasize ball security and situational awareness in practice leading into the upcoming bye.
+                    </p>
+                </article>
+
+                <!-- WEEK 9 -->
+                <article class="news-card">
+                    <h3>Week 9 — Home Win vs Pinkerton Tyrants (128.86–118.3)</h3>
+                    <div class="meta">Week 9 — Final score</div>
+                    <p>
+                        A balanced offensive effort lifted the ShadowHawks to a solid home victory. Multiple players contributed in both the passing and rushing attack; the defense made a late stand to preserve the lead. Team leaders credited preparation and situational planning for the win.
+                    </p>
+                </article>
+
+                <!-- WEEK 8 -->
+                <article class="news-card">
+                    <h3>Week 8 — Road Win at Jerknowitzski Shiners (141.98–117.92)</h3>
+                    <div class="meta">Week 8 — Final score</div>
+                    <p>
+                        The ShadowHawks delivered a convincing road performance with balanced scoring and disciplined defense. The offense controlled the clock in key stretches while the pass rush created pressure that led to several turnovers. This win was cited by staff as evidence of the team's depth and resiliency.
+                    </p>
+                </article>
+
+                <!-- WEEK 6 -->
+                <article class="news-card">
+                    <h3>Week 6 — Road Loss at Wilheimsburg Bighorns (100.62–113.64)</h3>
+                    <div class="meta">Week 6 — Final score</div>
+                    <p>
+                        In a tightly contested matchup, the ShadowHawks came up short after falling behind late in the second half. The coaching staff called the loss a “close learning opportunity” and emphasized in postgame comments that attention to detail will be the focus during the bye week.
+                    </p>
+                </article>
+
+                <!-- WEEK 5 -->
+                <article class="news-card">
+                    <h3>Week 5 — Home Win vs Hanover Foxhounds (133.54–110.94)</h3>
+                    <div class="meta">Week 5 — Final score</div>
+                    <p>
+                        The ShadowHawks posted an efficient offensive performance and limited big plays defensively to secure a comfortable home victory. The team executed well in the red zone and sustained multiple scoring drives.
+                    </p>
+                </article>
+
+                <!-- WEEK 4 -->
+                <article class="news-card">
+                    <h3>Week 4 — Road Loss at Pinkerton Tyrants (122.18–126.8)</h3>
+                    <div class="meta">Week 4 — Final score</div>
+                    <p>
+                        A late-game swing allowed the Tyrants to edge the ShadowHawks in a close contest. The coaching staff noted missed opportunities on short-yardage situations and late-game play-calling that will be reviewed in the film room.
+                    </p>
+                </article>
+
+                <!-- WEEK 3 -->
+                <article class="news-card">
+                    <h3>Week 3 — Loss vs Jerknowitzski Shiners (116.62–126.42)</h3>
+                    <div class="meta">Week 3 — Final score</div>
+                    <p>
+                        The ShadowHawks were unable to overcome early turnovers and fell at home. While several individual performances were encouraging, the team identified consistency and control of the line of scrimmage as focal points for practice.
+                    </p>
+                </article>
+
+                <!-- WEEK 1 -->
+                <article class="news-card">
+                    <h3>Week 1 — Season Opener Win vs Wilheimsburg Bighorns (137.36–98.02)</h3>
+                    <div class="meta">Week 1 — Final score</div>
+                    <p>
+                        The season opened with a commanding win. Offensive balance and timely defensive plays set the tone early. Coaching staff praised preseason preparation and named this performance as the standard to maintain moving forward.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- SIDE COLUMN -->
+            <aside class="side-column">
+
+                <!-- PLAYER ADDS / DROPS -->
+                <div class="card">
+                    <h4>Player Adds / Drops</h4>
+                    <ul class="mini-list">
+                        <!-- EDIT THIS LIST: add/remove entries as roster moves occur -->
+                        <li><strong>Added (this week):</strong> Seahawks D/ST (added to roster)</li>
+                        <!-- Example: <li><strong>Dropped (date):</strong> Player Name — reason</li> -->
+                    </ul>
+                </div>
+
+                <!-- START / SIT NEWS -->
+                <div class="card">
+                    <h4>Start / Sit — This Week</h4>
+                    <ul class="mini-list">
+                        <!-- EDIT THIS LIST: update entries weekly -->
+                        <li><strong>Rome Odunze — Sit</strong> — Bench decision due to matchup concerns.</li>
+                        <li><strong>James Cook — Sit</strong> — Bench decision due to matchup concerns.</li>
+                        <!-- Example: <li><strong>Player Name — Start</strong> — Short note</li> -->
+                    </ul>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="card">
+                    <h4>Quick Links</h4>
+                    <ul class="mini-list">
+                        <li><a href="players.html">Full Roster</a></li>
+                        <li><a href="standing.html">Standings & Schedule</a></li>
+                        <li><a href="injuries.html">Injury Report</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+
+        </div> <!-- end grid -->
+
+    </div> <!-- end wrap -->
+
+    <footer>
+        ShadowHawks Football © 2025 — All Rights Reserved
+    </footer>
+
+</body>
+</html>
